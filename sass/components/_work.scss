@@ -1,0 +1,42 @@
+.work-section {
+  padding-bottom: 94px;
+}
+.work-title {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--secondary-title-colour);
+  margin-bottom: 50px;
+}
+.work-list {
+  display: flex;
+  align-items: center;
+}
+
+.work-image:not(:last-child) {
+  margin-right: 30px;
+}
+.image-card {
+  position: relative;
+}
+
+.image-text {
+  display: flex;
+  position: absolute;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #ffffff;
+  bottom: 0;
+  margin: 0 auto;
+  width: 370px;
+  height: 70px;
+  background: rgba(47, 48, 58, 0.8);
+  align-items: center;
+  justify-content: center;
+}
