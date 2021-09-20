@@ -11,9 +11,9 @@
   color: #ffffff;
   background-color: var(--blue-color);
 }
-/* padding-right: 8px;
- */
 
-.products-item:not(:last-child) {
-  margin-right: 8px;
+.products-item {
+  &:not(:last-child) {
+    margin-right: 8px;
+  }
 }

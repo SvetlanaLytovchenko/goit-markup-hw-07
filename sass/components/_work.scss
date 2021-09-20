@@ -1,7 +1,7 @@
-.work-section {
+.work {
   padding-bottom: 94px;
 }
-.work-title {
+.work__title {
   font-weight: bold;
   font-size: 36px;
   line-height: 1.17;
@@ -15,14 +15,16 @@
   align-items: center;
 }
 
-.work-image:not(:last-child) {
-  margin-right: 30px;
+.work-image {
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
 }
-.image-card {
+.work-image__card {
   position: relative;
 }
 
-.image-text {
+.work-image__text {
   display: flex;
   position: absolute;
   font-weight: bold;
