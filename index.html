@@ -20,8 +20,8 @@
     <header class="header">
       <div class="container">
         <nav class="header-nav">
-          <a class="header__logo link" href=""
-            ><span class=" header__logo-part">Web</span>Studio</a
+          <a class="header-logo link" href=""
+            ><span class=" header-logo__part">Web</span>Studio</a
           >
           <ul class="header-list list">
             <li class="header-list__item">
@@ -107,36 +107,35 @@
         <div class="container">
           <h2 class="work__title">Чем мы занимаемся</h2>
           <ul class="work-list list">
-            <li class="work-image">
-              <div class="work-image__card">
+            <li class="work-list__image">
+              <div class="work-list__card">
               <img src="./images/img1.jpg "
                 alt="Выполнение программирования"
                 width="370"
                 height="294"/>
-                <h3 class="work-image__text"> Десктопные приложения </h3>
+                <h3 class="work-list__text"> Десктопные приложения </h3>
               </div>
             </li>
-            <li class="work-image">
-              <div class="work-image__card">
+            <li class="work-list__image">
+              <div class="work-list__card">
               <img
                 src="./images/img2.jpg"
                 alt="разработка меню"
                 width="370"
                 height="294"
               />
-              <h3 class="work-image__text"> Мобильные приложения </h3>
+              <h3 class="work-list__text"> Мобильные приложения </h3>
               </div>
             </li>
-            <li class="work-image">
-              <div class="work-image__card">
+            <li class="work-list__image">
+              <div class="work-list__card">
                 <img src="./images/img3.jpg"
                 alt="дизайн"
                 width="370"
                 height="294"
               />
-              <h3 class="work-image__text"> Дизайнерские решения </h3>
-              </div>
-              
+              <h3 class="work-list__text"> Дизайнерские решения </h3>
+              </div>              
             </li>
           </ul>
         </div>
@@ -391,7 +390,7 @@
           <ul class=" join-list list">
             <li class="join-list__item">
               <a href="" class="join-list__link">
-                <svg class="join-list__-icon" width="20" height="20">
+                <svg class="join-list__icon" width="20" height="20">
                   <use href="./images/icons.svg#icon-instagram"></use>
                 </svg>
               </a>        
@@ -438,54 +437,54 @@
     
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
-        <button type="button" class="btn-close" data-modal-close>
-          <svg class="btn-close__icon" width="11" height="11">
+        <button type="button" class="modal__btn-close" data-modal-close>
+          <svg class="modal__btn-close-icon" width="11" height="11">
             <use href="./images/icons.svg#icon-vector"></use>
           </svg>
         </button>
         <form action="#" class="modal-form">
           <b class="modal-form__title">Оставьте свои данные, мы вам перезвоним</b>
-          <div class="modal-form__field">
-            <label for="input-name" class="modal-form__label">Имя</label>
+          <div class="modal-form-field">
+            <label for="input-name" class="modal-form-field__label">Имя</label>
             <span class="input-wrapper">
-              <input type="text" id="input-name" name="modal-name" class="modal-form__input" >
-              <svg class="modal-form__icon" width="12" height="12">
+              <input type="text" id="input-name" name="modal-name" class="modal-form-field__input" >
+              <svg class="modal-form-field__icon" width="12" height="12">
               <use href="./images/icons.svg#icon-person"></use>
               </svg>
             </span>
           </div>
-          <div class="modal-form__field">
-            <label for="input-tel" class="mmodal-form__label">Телефон</label>
+          <div class="modal-form-field">
+            <label for="input-tel" class="modal-form-field__label">Телефон</label>
             <span class="input-wrapper">
-              <input type="tel" name="modal-tel" id="input-tel" class="modal-form__input" >
-              <svg class="modal-form__icon" width="13" height="12">
+              <input type="tel" name="modal-tel" id="input-tel" class="modal-form-field__input" >
+              <svg class="modal-form-field__icon" width="13" height="12">
                 <use href="./images/icons.svg#icon-tel"></use>
               </svg>
             </span>
           </div>
-          <div class="modal-form__field">
-          <label for="input-email" class="modal-form__label">Почта</label>
+          <div class="modal-form-field">
+          <label for="input-email" class="modal-form-field__label">Почта</label>
           <span class="input-wrapper">
-          <input type="email" name="modal-email" id="input-email" class="modal-form__input" >
-          <svg class="modal-form__icon" width="15" height="12">
+          <input type="email" name="modal-email" id="input-email" class="modal-form-field__input" >
+          <svg class="modal-form-field__icon" width="15" height="12">
             <use href="./images/icons.svg#icon-letter"></use>
           </svg>
           </span>
           </div>
-          <div class="modal-comments__field">
-            <label for="comments" class="modal-form__label">Комментарий</label>
-            <textarea name="modal-comments" id="comments" placeholder="Введите текст" class="modal-comments"></textarea>
+          <div class="modal-comments-field">
+            <label for="comments" class="modal-form-field__label"> Комментарий</label>
+            <textarea name="modal-comments" id="comments" placeholder="Введите текст" class="modal-comments-field__comments"></textarea>
           </div>
           <div class="modal-check-field">
-            <input type="checkbox" id="check" name="privacy" class="visually-hidden checkbox">
-            <label for="check" class="checkbox_label">
+            <input type="checkbox" id="check" name="privacy" class="visually-hidden modal-check-field__checkbox">
+            <label for="check" class="modal-check-field__label">
               <span class="icon-check">
               <svg class="" width="11" height="8">
                 <use href="./images/icons.svg#icon-check"></use>
               </svg>
               </span>
               Соглашаюсь с рассылкой и принимаю 
-              <a  class="conditions" href=""> Условия договора</a>
+              <a  class="modal-check-field__conditions" href=""> Условия договора</a>
             </label>
           </div>
           <button type="submit" class="form-btn">Отправить</button>

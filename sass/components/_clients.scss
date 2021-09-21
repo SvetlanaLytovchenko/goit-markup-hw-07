@@ -1,25 +1,26 @@
 .clients {
   background-color: #ffffff;
   justify-content: center;
+  &__title {
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--secondary-title-colour);
+    margin-bottom: 50px;
+  }
 }
-.clients__title {
-  font-weight: bold;
-  font-size: 36px;
-  line-height: 1.17;
-  text-align: center;
-  letter-spacing: 0.03em;
-  color: var(--secondary-title-colour);
-  margin-bottom: 50px;
-}
+
 .clients-list {
   display: flex;
   justify-content: center;
-}
-.clients-list__item {
-  width: 170px;
-  height: 90px;
-  &:not(:last-child) {
-    margin-right: 30px;
+  &__item {
+    width: 170px;
+    height: 90px;
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
   }
 }
 

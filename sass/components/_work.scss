@@ -15,16 +15,16 @@
   align-items: center;
 }
 
-.work-image {
+.work-list__image {
   &:not(:last-child) {
     margin-right: 30px;
   }
 }
-.work-image__card {
+.work-list__card {
   position: relative;
 }
 
-.work-image__text {
+.work-list__text {
   display: flex;
   position: absolute;
   font-weight: bold;
