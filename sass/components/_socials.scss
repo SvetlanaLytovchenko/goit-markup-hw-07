@@ -1,5 +1,5 @@
 .socials-list {
-  fill: #afb1b8;
+  fill: var(--clients-color);
   display: flex;
   justify-content: center;
 }
@@ -16,7 +16,7 @@
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   .socials-list__link:hover &,
   .socials-list__link:focus & {
-    fill: #ffffff;
+    fill: var(--main-title-colour);
   }
 }
 .socials-list__link {
@@ -26,11 +26,11 @@
   align-items: center;
   justify-content: center;
   border-radius: 50%;
-  background-color: #ffffff;
-  fill: #afb1b8;
+  background-color: var(--main-title-colour);
+  fill: var(--clients-color);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   &:hover,
   &:focus {
-    background-color: #2196f3;
+    background-color: var(--blue-color);
   }
 }

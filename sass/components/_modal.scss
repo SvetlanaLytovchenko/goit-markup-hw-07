@@ -143,18 +143,24 @@
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-  color: #757575;
+  color:var(--secondary-text-color);
+ 
 }
 
+.modal-check-field__label:hover,
+ .modal-check-field__label:focus .icon-check {
+  border-color: var(--blue-color);
+}
 .icon-check {
   width: 16px;
   height: 15px;
-  border: 2px solid #212121;
+  border: 2px solid var(--main-text-color);
   border-radius: 2px;
   margin-right: 7px;
   display: flex;
   justify-content: center;
   align-items: center;
+ 
 }
 .modal-check-field__checkbox {
   &:checked + .modal-check-field__label .icon-check {
@@ -198,5 +204,5 @@ input:-webkit-autofill:hover,
 input:-webkit-autofill:focus,
 input:-webkit-autofill:active {
   transition: background-color 5000s ease-in-out 0s;
-  -webkit-box-shadow: 0 0 0px 1000px #fff inset;
+  -webkit-box-shadow: 0 0 0px 1000px var(--main-title-colour) inset;
 }
