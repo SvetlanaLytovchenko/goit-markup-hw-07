@@ -529,6 +529,11 @@ img {
   color: var(--main-title-colour);
 }
 
+.current-portfolio {
+  background-color: var(--blue-color);
+  color: var(--main-title-colour);
+}
+
 .gallary-title {
   font-weight: bold;
   font-size: 18px;
@@ -920,11 +925,14 @@ img {
 
 .modal-check-field {
   margin-bottom: 30px;
+  display: block;
+  justify-content: center;
 }
 
 .modal-check-field__label {
   display: flex;
   align-items: center;
+  justify-content: center;
   position: relative;
   cursor: pointer;
   font-weight: normal;
@@ -932,11 +940,6 @@ img {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--secondary-text-color);
-}
-
-.modal-check-field__label:hover,
-.modal-check-field__label:focus .icon-check {
-  border-color: var(--blue-color);
 }
 
 .icon-check {
@@ -952,7 +955,12 @@ img {
 
 .modal-check-field__checkbox:checked + .modal-check-field__label .icon-check {
   background: var(--blue-color);
-  border: none;
+  border: transparent;
+}
+
+.modal-check-field__checkbox:hover + .modal-check-field__label .icon-check,
+.modal-check-field__checkbox:focus + .modal-check-field__label .icon-check {
+  border-color: var(--blue-color);
 }
 
 .modal-check-field__conditions {
